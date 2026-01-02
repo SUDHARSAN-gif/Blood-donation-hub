@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://northcentralsurgical.com/wp-content/uploads/2025/06/Transforming-Lives-The-Powerful-Impact-of-Donating-Blood--2000x1000.jpeg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+h2{
+    color: black;
+}
+form {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    background: crimson;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 35px;
+    width: 110px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: black;
+}
+.container{
+text-align: center;
+}
