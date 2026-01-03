@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donate - Home</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- nav bar ------------------------------------------>
+    <nav class="navbar">
+       <div class="logo">
+        <p>BLOOD DONATE</p>
+  <!-- search bar ----------------------------------------->
+  <div class="search-container">
+    <!-- <span class="search-icon"></span> -->
+    <input type="text" id="searchInput" placeholder="Search">
+</div></div>
+</nav><br><br>
+<!-- Red Menu Section ------------------------------------->
+<section class="menu-bar">
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="divider"></li>
+        <li class="dropdown">
+            <a href="#">About </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Objectives</a></li>
+                <li><a href="#">Notification</a></li>
+            </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="dropdown">
+            <a href="#">Looking for Blood </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Search Blood</a></li>
+                <li><a href="#">Blood Availability</a></li>
+            </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="dropdown">
+            <a href="#">Want to Donate </a>
+            <ul class="dropdown-menu">
+                <a href="#">Register</a>
+                <li><a href="#">Donation Camps</a></li>
+            </ul>
+        </li>
+        <li class="divider"></li>
+        <li><a href="Signup.html"> Login</a></li>
+    </ul>
+</section><br><br><br><br>
+<marquee scrollamount="12"><b>Be a life saver</b>________________<b>Your one donation can save up to 3 lives</b> _____________________<b>A Drop for You, a Life for Someone</b></marquee>
+<!----------------------- banner ------------------------------>
+<div class="banner">
+<img src="blood3.png" height="300px" width="1500px" alt="cover"><br></div>
+<!-------------------------- SERVICES ----------------------->
+ <section class="services">
+    <h2>Our Services</h2>
+
+    <!------------------------------------ Service Cards -->
+    <div class="service-cards">
+        <div class="card active" onclick="showService(0)">
+            🔍
+            <p>Blood Availability<br>Search</p>
+        </div>
+        <div class="card" onclick="showService(1)">
+            🏥
+            <p>Blood Center<br>Directory</p>
+        </div>
+        <div class="card" onclick="showService(2)">
+            📍
+            <p>Blood Donation<br>Camps</p>
+        </div>
+        <div class="card" onclick="showService(3)">
+            👤
+            <p>Donor<br>Login</p>
+        </div>
+        <div class="card" onclick="showService(4)">
+            📝
+            <p>Register Voluntary Blood<br>Camps</p>
+        </div>
+    </div>
+    <!--------------------------- Service Description -->
+    <div class="service-content">
+        <p id="serviceText">
+            The Blood Availability Search lets users quickly check real-time blood availability across registered blood centers.
+            By selecting State, District, Blood Group, Component and Location, users can easily find the required units.
+            This tool supports patients, donors, and hospitals in making informed decisions during emergencies or planned treatments.
+        </p>
+        <button id="serviceBtn">Blood Availability Search</button>
+    </div>
+</section>
+
+<!-- donor section ------------------------------>
+<section class="donate-section">
+  <div class="text-content">
+    <h2>Who Can Donate</h2>
+    <p>Donating blood is a simple, safe and life-saving act. But not everyone may be eligible to donate. To ensure the safety of both donors and recipients, certain health criteria must be met.</p>
+    <p>Down below is a Questionnaire provided to assess the Health percentage based on general norms.</p>
+    <div class="buttons">
+      <button class="btn primary">Check your eligibility</button>
+      <button class="btn secondary">Find Nearby Camps</button>
+    </div>
+  </div>
+  <div class="image-content">
+    <img src="https://eraktkosh.mohfw.gov.in/eraktkoshPortal/assets/landingPage/person_initial.png" alt="Human body illustration" />
+  </div>
+</section>
+<!-- section-1 ------------------------------>
+<div class="left-section">
+    <h1>Nationwide Presence,<br>Ensuring Accessibility Across India.</h1>
+    <p class="subheading">A Connected Network of Blood Center Serving Every State and District</p>
+
+    <label for="stateSelect">Select State</label>
+    <select id="stateSelect" name="stateSelect">
+      <option value="all">All</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="tamilnadu">Tamil Nadu</option>
+      <option value="delhi">Delhi</option>
+      <option value="westbengal">West Bengal</option>
+      <!-- Add more states as needed -->
+    </select>
+
+    <div class="stats-grid">
+      <div class="card">
+        <div class="icon drop">💧</div>
+        <div class="card-content">
+          <div class="card-label">Total Donor Registration</div>
+          <div class="card-number">8,649,257</div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="icon stethoscope">🩺</div>
+        <div class="card-content">
+          <div class="card-label">Total Blood Centers</div>
+          <div class="card-number">4,503</div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="icon bag">🏥</div>
+        <div class="card-content">
+          <div class="card-label">Total Upcoming Camps</div>
+          <div class="card-number">273</div>
+        </div>
+      </div><br>
+      <div class="card">
+        <div class="icon building">🏛️</div>
+        <div class="card-content">
+          <div class="card-label">Camps Organised</div>
+          <div class="card-number">221,581</div>
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      *The data represented has been collected post year 2020 onwards.
+    </div>
+  </div>
+</div>
+<!-- footer ---------------------------------->
+ <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><strong>Address:</strong><br>
+                    C-56/1, Anusandhan Bhawan, Sector-62, Noida, Uttar Pradesh-201307
+                </p>
+
+                <p><strong>Contact Number</strong><br>
+                    +91-9650816031
+                </p>
+
+                <p><strong>Email</strong><br>
+                    donate@gmail.com
+                </p>
+
+                <p><strong>For Administrative queries</strong><br>
+                    Blood Cell, National Health Mission<br>
+                    Ministry of Health & Family Welfare, New Delhi - 110011
+                </p>
+            </div>
+
+            <!-- Important Links -->
+            <div class="footer-column">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="#">Search Blood Availability</a></li>
+                    <li><a href="#">Search Blood Center Directory</a></li>
+                    <li><a href="#">Search Blood Donation Camps</a></li>
+                    <li><a href="#">Blood Center Login</a></li>
+                    <li><a href="#">Donor Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
